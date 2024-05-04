@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<hthtjgml Lang="en">
+<!-- PAGINA PRINCIPAL -->
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatibler" content="IEwedge">
+    <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conciliacion</title>
+    <link rel="stylesheet" href="../CSS/styles.css">
+  </head>
+  <style>
+    .container {   
+        max-width: 1000px; /* Ajusta el valor al ancho deseado */
+        margin: 0 auto; /* Centra el contenedor horizontalmente */
+        margin-top: 100px;
+        padding: 15px; /* Agrega un poco de relleno para el espaciado */
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        background-color: rgb(233, 220, 220);
+        border-radius: 20px;
+    } 
+    
+    .container-header {
+        position: absolute; /* Posiciona el header de forma absoluta */
+        top: 151px; /* Ajusta la posición vertical del header según sea necesario */
+        left: 177px; /* Alinea el header a la izquierda */
+        width: 74.2%; /* Ocupa todo el ancho del contenedor */
+        background-color: rgb(208, 98, 176); /* Color de fondo con transparencia */
+        padding: 10px; /* Ajusta el relleno del header */
+        text-align: left; /* Centra el contenido del header */
+        border-radius: 10px;
+    }
+    
+    
+    .container-title {
+        font-size: 24px; /* Tamaño de fuente del título */
+        color: #060505; /* Color del texto del título */
+    }
+    .cheque-form {
+        flex:content;
+        margin-right: 300px;
+        margin-right: 0px;
+        background-color: rgba(218, 159, 159, 0); /* Cambio de color de fondo */
+        padding: 10px; /* Espaciado interno */
+        border-radius: 0px; /* Bordes redondeados */
+        justify-content: space-between;
+        flex-direction: column; /* Alinea los elementos en columna */
+        align-items: center; /* Alinea los elementos a la izquierda */
+    }
+
+    .detalle-form {
+        flex: 1;
+        background-color: #b24f4f00; /* Cambio de color de fondo */
+        padding: 5px; /* Espaciado interno */
+        border-radius: 0px; /* Bordes redondeados */
+        display:flex; /* Utiliza flexbox para alinear los elementos en línea */
+        justify-content:left; /* Distribuye los elementos a lo largo del contenedor */
+        text-align: center; /* Centra el contenido del formulario */
+    }
+    
+    .campos-form {
+        flex: 1;
+        background-color: #d5424200; /* Cambio de color de fondo */
+        padding: 8px; /* Espaciado interno */
+        border-radius: 0px; /* Bordes redondeados */
+        display:flex; /* Utiliza flexbox para alinear los elementos en línea */
+        justify-content: space-between; /* Distribuye los elementos a lo largo del contenedor */
+        text-align: center; /* Centra el contenido del formulario */
+    }
+
+
+    input[type="text"] {
+        flex: 2; /* Permite que los elementos ocupen más espacio que las etiquetas */
+        padding: 8px; /* Ajusta el relleno de los inputs */
+        border-radius: 5px; /* Bordes redondeados */
+        border: 1px solid #ccc; /* Borde de los inputs */
+        width:150px;
+    }
+
+
+    input[type="text"],
+    input[type="date"] {
+     margin-top: 3px;
+     padding: 5px; /* Ajusta el relleno de los inputs */
+     border-radius: 10px; /* Bordes redondeados */
+     border: 1px solid #ccc3c3; /* Borde de los inputs */
+    }
+    .form-title {
+        font-size: 20px; /* Tamaño de fuente más grande para el título */
+        background-color: #de69e6; /* Color de fondo de la paleta */
+        padding: 10px; /* Ajuste de relleno para resaltar el título */
+        border-radius: 10px; /* Bordes redondeados */
+        margin-bottom: 21px; /* Espacio entre el título y el contenido */
+        text-align: center; /* Centra el título */
+    }
+
+    .form-title2 {
+        font-size: 20px; /* Tamaño de fuente más grande para el título */
+        background-color: #de69e6; /* Color de fondo de la paleta */
+        padding: 10px; /* Ajuste de relleno para resaltar el título */
+        border-radius: 10px; /* Bordes redondeados */
+        margin-top: 3px;
+        margin-bottom: 16px; /* Espacio entre el título y el contenido */
+        text-align:center; /* Centra el título */
+        width: 500px;
+    }
+
+    .form-group2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centra los elementos horizontalmente */
+        margin-top:0;
+    }
+    .form-group1detalle {/* creo que estos 3 son para modificar el tamaño de los campos jeje*/
+        display: flex;
+        margin-top: 10px;
+    }
+    .form-group1paguese {
+        display: flex;
+        margin-top: 10px;
+    }
+    .form-group1suma {
+        display: flex;
+        margin-top: 10px;
+    }
+/*esta linea de abajo es para cambiar la fuente de los label*/
+    .paguese,.suma,.detalle,.numero_cheque,.fecha{
+        font-size:13px;
+    }
+    .objeto,.monto{
+        font-size: 13px;
+    }
+
+
+    /* Estilos para los botones */
+    #Grabar {
+        margin-top: 50px; /* Espacio entre los botones y el contenido */
+       margin-right: 0 0px;
+       margin-left: 50px;
+        width: 200px; /* Ancho de los botones */
+        padding: 8px; /* Espaciado interno de los botones */
+        border-radius: 5px; /* Bordes redondeados */
+        background-color: #4CAF50; /* Color de fondo verde */
+        color: white; /* Color del texto blanco */
+        text-align: center; /* Alineación del texto al centro */
+        text-decoration: none; /* Sin subrayado en el texto */
+        display: inline-block; /* Mostrar como un elemento de bloque */
+        font-size: 16px; /* Tamaño de fuente */
+        cursor: pointer; /* Cambiar el cursor al pasar el mouse */
+    }
+
+    #Nuevo1 {
+        margin-top: -10px; /* Espacio entre los botones y el contenido */
+        margin-right: 0px;
+        margin-left: 0px;
+        width: 200px; /* Ancho de los botones */
+        padding: 0px; /* Espaciado interno de los botones */
+        border-radius: 5px; /* Bordes redondeados */
+        background-color: #4CAF50; /* Color de fondo verde */
+        color: white; /* Color del texto blanco */
+        text-align: center; /* Alineación del texto al centro */
+        text-decoration: none; /* Sin subrayado en el texto */
+        display: inline-block; /* Mostrar como un elemento de bloque */
+        font-size: 16px; /* Tamaño de fuente */
+        cursor: pointer; /* Cambiar el cursor al pasar el mouse */
+    }
+    #Nuevo2 {
+        margin-top: 40px; /* Espacio entre los botones y el contenido */
+        margin-right: 0px;
+        margin-left: 0px;
+        width: 100px; /* Ancho de los botones */
+        padding: 0px; /* Espaciado interno de los botones */
+        border-radius: 5px; /* Bordes redondeados */
+        background-color: #4CAF50; /* Color de fondo verde */
+        color: white; /* Color del texto blanco */
+        text-align: center; /* Alineación del texto al centro */
+        text-decoration: none; /* Sin subrayado en el texto */
+        display: inline-block; /* Mostrar como un elemento de bloque */
+        font-size: 16px; /* Tamaño de fuente */
+        cursor: pointer; /* Cambiar el cursor al pasar el mouse */
+    }
+    #Grabar {
+        margin-top: 27px; /* Espacio entre los botones y el contenido */
+        margin-right: 0px;
+        margin-left: 0px;
+        width: 100px; /* Ancho de los botones */
+        padding: 0px; /* Espaciado interno de los botones */
+        border-radius: 5px; /* Bordes redondeados */
+        background-color: #4CAF50; /* Color de fondo verde */
+        color: white; /* Color del texto blanco */
+        text-align: center; /* Alineación del texto al centro */
+        text-decoration: none; /* Sin subrayado en el texto */
+        display: inline-block; /* Mostrar como un elemento de bloque */
+        font-size: 16px; /* Tamaño de fuente */
+        cursor: pointer; /* Cambiar el cursor al pasar el mouse */
+    }
+
+
+
+
+
+    #Nuevo2:hover, #Nuevo1:hover,#Grabar:hover {
+        background-color: #63dc69; /* Color de fondo más oscuro cuando se pasa el mouse */
+    }
+
+    </style>
+  <body>
+    <header class="header">
+        <div class="logo">
+            <img src="../img/logopag.jpg" alt="LOGO MARCA">
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="PaginaG.html" class="btninicio" >Inicio</a></li>
+                <li><a href="cheque.php" class="btncheques" >Cheques  </a></li>
+
+               
+                <li class="btnoperaciones">
+                    Operaciones Cks
+                    <ul class="submenu">
+                        <li><a href="../pestañas/anulacion.php">Anulación</a></li>
+                        <li><a href="../pestañas/sacarCirculacion.php">Sacar de Circulación</a></li>
+                       
+                    </ul>
+                </li>
+
+
+                <li><a href="otrastransacciones.php" class="btnotrastrans">Otras transacciones</a></li>
+
+                <li><a href="conciliacion.html" class="btnconsiliacion">Conciliación</a></li>
+
+                <li><a href="" class="btnreportes">Reportes</a></li>
+
+                <li><a href="" class="btnmanten">Mantenimiento</a></li>
+            </ul>
+        </nav>
+        <a href="" class="btn"><button>contact</button></a>
+
+    </header>
+
+    <div class="container">
+        <header class="container-header">
+            <h1 class="container-title">Conciliacion Bancaria</h1>
+        </header>
+        <div class="cheque-form">
+            <div class="form-group1">
+                <br>
+                <br>
+                <br>
+                <label for="numero_cheque"class="numero_cheque">SALDO SEGÚN LIBRO AL</label>
+                <br>
+                <br>
+                <label for="numero_cheque"class="numero_cheque">Más: Depósito</label>
+                <br>
+                <br>
+                <label for="numero_cheque"class="numero_cheque">Cheques Anulados</label>
+                <br>
+                <br>
+                <label for="numero_cheque"class="numero_cheque">Notas de Crédito</label>
+                <br>
+                <br>
+                <label for="numero_cheque"class="numero_cheque">Ajustes</label>
+                <br>
+                <br>
+                <br>
+                <label for="numero_cheque"class="numero_cheque">SUBTOTAL</label>
+                <br>
+                <br>
+                <label for="numero_cheque"class="numero_cheque">Menos: Cheques girados en el mes</label>
+                <br>
+                <br>
+                <label for="numero_cheque"class="numero_cheque">Notas de Debitos</label>
+                <br>
+                <br>
+                <label for="numero_cheque"class="numero_cheque">Ajustes</label>
+                <br>
+                <br>
+                <br>
+                <label for="numero_cheque"class="numero_cheque">SALDO CONCILIADO SEGÚN LIBROS AL</label>
+                <br>
+                <br>
+                <br>
+                <br>
+                <label for="numero_cheque"class="numero_cheque">SALDO EN BANCO AL</label>
+                <br>
+                <br>
+                <label for="fecha"class="fecha">Más: Depósitos en Transito</label>
+            </div>
+            
+            <div class="form-group1paguese">
+               
+                <label for="paguese"class="paguese">Menos: Cheques en Circulación</label>
+            </div>
+            <div class="form-group1suma">
+                <label for="suma"class="suma">Más: Ajustes</label>
+            </div>
+                <br>
+                <br>
+                <br>
+            <div class="form-group1detalle">
+                <br>
+                <br>
+                
+                <label for="detalle" class="detalle">SALDO CONCILIADO IGUAL A BANCO AL</label>
+                <div> <button id="Grabar">Grabar</button></div>
+
+            </div>
+      </div>
+        
+        <div class="detalle-form">
+            <div class="form-group2">
+                <div class="field-group">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <input type="text" id="objeto" name="objeto">
+                    <br>
+                    <input type="text" id="monto" name="monto">
+                    <div class="group-objetodegasto1">
+                        <input type="text" id="objetocampo1" name="obj1">
+                        <br>
+                        <input type="text" id="objetomonto1" readonly value="">
+                        <div class="form-group1suma">
+                            <label for="suma"class="suma">Subtotal</label>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="group-objetodegasto2">
+                        <label for="suma"></label>
+                        <input type="text" id="objetocampo2" name="obj2">
+                        <br>
+                        <input type="text" id="objetomonto2" readonly value="">
+                    </div>
+
+                    <div class="group-objetodegasto2">
+                        <label for="suma"></label>
+                        <input type="text" id="objetocampo2" name="obj2">
+                        <div
+                        <label for="suma2"class="suma2">Subtotal</label>
+                    </div>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <input type="text" id="objetomonto2" readonly value="">
+                    </div>
+                
+                    <div class="group-objetodegasto3">
+                        <label for="suma"></label>
+                        <input type="text" id="objetocampo3" name="obj3">
+                        <br>
+                        <input type="text" id="objetomonto3" readonly value="">
+                        <div
+                        <label for="suma3"class="suma3">Subtotal</label>
+                    </div>
+                    <div> <button id="Nuevo2">Nuevo</button></div>
+                    </div>
+                </div>
+            </div>
+            <br>
+        </div>
+        <div class="campos-form">
+            <div class="field-group">
+                <div> <button id="Nuevo1">Realizar Conciliación</button></div>
+                <br>
+                <input type="text" id="objeto" name="objeto">
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <input type="text" id="monto" name="monto">
+                <div class="group-objetodegasto1">
+                    <input type="text" id="objetocampo1" name="obj1">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <input type="text" id="objetomonto1" readonly value="">
+                </div>
+                <div class="group-objetodegasto2">
+                    <label for="suma"></label>
+                    <input type="text" id="objetocampo2" name="obj2">
+                    <br>
+                    <br>
+                    <br>
+                    <input type="text" id="objetomonto2" readonly value="">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+                <div class="group-objetodegasto3">
+                    <label for="suma"></label>
+                    <input type="text" id="objetocampo3" name="obj3">
+                    <br>
+                    <input type="text" id="objetomonto3" readonly value="">
+                </div>
+            </div>
+    </div>
+
+  </body>
+  <script>
+    function cargarContenido(url) {
+        // Realiza una solicitud HTTP para obtener el contenido de la URL
+        var xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState === XMLHttpRequest.DONE) {
+                if (xhr.status === 200) {
+                    // Si la solicitud es exitosa, coloca el contenido en el área de contenido
+                    document.getElementById('contenido').innerHTML = xhr.responseText;
+                } else {
+                    // Maneja el caso de error
+                    console.error('Error al cargar el contenido:', xhr.status);
+                }
+            }
+        };
+        xhr.open('GET', url, true);
+        xhr.send();
+    }
+</script>
+</html>

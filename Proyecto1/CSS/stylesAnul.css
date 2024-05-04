@@ -1,0 +1,242 @@
+.container {   
+    max-width: 1000px; /* Ajusta el valor al ancho deseado */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    margin-top: 100px;
+    padding: 15px; /* Agrega un poco de relleno para el espaciado */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: rgb(233, 220, 220);
+    border-radius: 20px;
+} 
+
+.container-header {
+    position: absolute; /* Posiciona el header de forma absoluta */
+    top: 140px; /* Ajusta la posición vertical del header según sea necesario */
+    left: 180px; /* Alinea el header a la izquierda */
+    width: 73.5%; /* Ocupa todo el ancho del contenedor */
+    background-color: rgb(208, 98, 176); /* Color de fondo con transparencia */
+    padding: 10px; /* Ajusta el relleno del header */
+    text-align: left; /* Centra el contenido del header */
+    border-radius: 10px;
+}
+
+
+.container-title {
+    font-size: 24px; /* Tamaño de fuente del título */
+    color: #060505; /* Color del texto del título */
+}
+.cheque-form {
+    flex: 1;
+    margin-right: 7px;
+    background-color: #ffffff; /* Cambio de color de fondo */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 20px; /* Bordes redondeados */
+    justify-content: space-between;
+    flex-direction: column; /* Alinea los elementos en columna */
+    align-items: center; /* Alinea los elementos a la izquierda */
+}
+
+.detalle-form {
+    flex: 1;
+    background-color: #fff8f8; /* Cambio de color de fondo */
+    padding: 8px; /* Espaciado interno */
+    border-radius: 20px; /* Bordes redondeados */
+    display:flex; /* Utiliza flexbox para alinear los elementos en línea */
+    justify-content: space-between; /* Distribuye los elementos a lo largo del contenedor */
+    text-align:left; /* Centra el contenido del formulario */
+}
+input[type="text"] {
+    flex: 2; /* Permite que los elementos ocupen más espacio que las etiquetas */
+    padding: 8px; /* Ajusta el relleno de los inputs */
+    border-radius: 5px; /* Bordes redondeados */
+    border: 1px solid #ccc; /* Borde de los inputs */
+    width:150px;
+}
+
+
+input[type="text"],
+input[type="date"] {
+ margin-top: 3px;
+ padding: 5px; /* Ajusta el relleno de los inputs */
+ border-radius: 10px; /* Bordes redondeados */
+ border: 1px solid #ccc3c3; /* Borde de los inputs */
+}
+.form-title {
+    font-size: 20px; /* Tamaño de fuente más grande para el título */
+    background-color: #de69e6; /* Color de fondo de la paleta */
+    padding: 10px; /* Ajuste de relleno para resaltar el título */
+    border-radius: 10px; /* Bordes redondeados */
+    margin-bottom: 21px; /* Espacio entre el título y el contenido */
+    text-align: center; /* Centra el título */
+}
+
+.form-title2 {
+    font-size: 20px; /* Tamaño de fuente más grande para el título */
+    background-color: #de69e6; /* Color de fondo de la paleta */
+    padding: 10px; /* Ajuste de relleno para resaltar el título */
+    border-radius: 10px; /* Bordes redondeados */
+    margin-top: 3px;
+    margin-bottom: 16px; /* Espacio entre el título y el contenido */
+    text-align:center; /* Centra el título */
+    width: 500px;
+}
+
+.form-group2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los elementos horizontalmente */
+    margin-top:0;
+}
+.form-group1gasto {/* creo que estos 3 son para modificar el tamaño de los campos jeje*/
+    display: flex;
+    margin-top: 10px;
+}
+.form-group1paguese {
+    display: flex;
+    margin-top: 10px;
+}
+.form-group1suma {
+    display: flex;
+    margin-top: 10px;
+}
+/*esta linea de abajo es para cambiar la fuente de los label*/
+.paguese,.suma,.gasto,.numero_cheque,.fecha,.form-label{
+    font-size:14px;
+}
+
+.d_anulacion{
+    font-size: 14px;
+}
+
+#fecha_a {
+    margin-left: 10px; /* Mueve el campo a la derecha */
+    padding: 5px; /* Ajusta el relleno del campo */
+    border-radius: 5px; /* Bordes redondeados */
+    border: 1px solid #ba4e4e; /* Borde del campo */
+    width: 100px; /* Ancho del campo */
+    font-size: 12px;
+}
+
+#suma {
+    margin-left:-70px; /* Mueve el campo a la derecha */
+    padding: 5px; /* Ajusta el relleno del campo */
+    border-radius: 5px; /* Bordes redondeados */
+    border: 1px solid rgb(188, 188, 190); /* Borde del campo */
+    width: 100%; /* Ancho del campo */
+    margin-top: 15px;
+    margin-right: 300px;
+    font-size: 14px;
+}
+#d_anulacion {
+    margin-left: 0px; /* Mueve el campo a la derecha */
+    padding: 30px; /* Ajusta el relleno del campo */
+    border-radius: 5px; /* Bordes redondeados */
+    border: 1px solid #b8bcb8; /* Borde del campo */
+    width: 450px; /* Ancho del campo */
+    margin-top: 15px;
+    margin-bottom: 30px;
+    margin-right: 70px;
+    font-size: 14px;
+    display: flex;
+}
+
+#paguese {
+    margin-left: 0px; /* Mueve el campo a la derecha */
+    padding: 0px; /* Ajusta el relleno del campo */
+    border-radius: 5px; /* Bordes redondeados */
+    border: 1px solid #b8bcb8; /* Borde del campo */
+    width: 200px; /* Ancho del campo */
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 0x;
+    font-size: 14px;
+}
+#fecha {
+    margin-left: 10px; /* Mueve el campo a la derecha */
+    padding: 5px; /* Ajusta el relleno del campo */
+    border-radius: 5px; /* Bordes redondeados */
+    border: 1px solid #ba4e4e; /* Borde del campo */
+    width: 100px; /* Ancho del campo */
+    font-size: 12px;
+}
+
+#detalle_anulado{
+    margin-left: 10px; /* Mueve el campo a la derecha */
+    padding: 5px; /* Ajusta el relleno del campo */
+    border-radius: 5px; /* Bordes redondeados */
+    border: 1px solid #ba4e4e; /* Borde del campo */
+    width: 150px; /* Ancho del campo */
+    font-size: 12px;
+}
+
+
+
+
+#numeroCheque{
+    margin-left:0px; /* Mueve el campo a la derecha */
+    padding: 5px; /* Ajusta el relleno del campo */
+    border-radius: 10px; /* Bordes redondeados */
+    border: 1px solid #ccc; /* Borde del campo */
+    width: 100px; /* Ancho del campo */
+}
+#objetocampo1 {
+    margin-left: 20px; /* Mueve el campo a la derecha */
+    padding: 5px; /* Ajusta el relleno del campo */
+    border-radius: 10px; /* Bordes redondeados */
+    border: 1px solid #ccc; /* Borde del campo */
+    width: 90px; /* Ancho del campo */
+}
+#objetocampo2 {
+    margin-left: 20px; /* Mueve el campo a la derecha */
+    padding: 5px; /* Ajusta el relleno del campo */
+    border-radius: 10px; /* Bordes redondeados */
+    border: 1px solid #ccc; /* Borde del campo */
+    width: 180px; /* Ancho del campo */
+}
+#objetocampo3 {
+    margin-left: 20px; /* Mueve el campo a la derecha */
+    padding: 5px; /* Ajusta el relleno del campo */
+    border-radius: 10px; /* Bordes redondeados */
+    border: 1px solid #ccc; /* Borde del campo */
+    width: 180px; /* Ancho del campo */
+}
+/* Estilos para los botones */
+#buscar {
+    margin-top: 0px; /* Espacio entre los botones y el contenido */
+   margin-right: 0px;
+   margin-left: 20px;
+    width: 65px; /* Ancho de los botones */
+    padding: 0px; /* Espaciado interno de los botones */
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: #4CAF50; /* Color de fondo verde */
+    color: white; /* Color del texto blanco */
+    text-align: center; /* Alineación del texto al centro */
+    text-decoration: none; /* Sin subrayado en el texto */
+    display: inline-block; /* Mostrar como un elemento de bloque */
+    font-size: 16px; /* Tamaño de fuente */
+    cursor: pointer; /* Cambiar el cursor al pasar el mouse */
+}
+#anular {
+    margin-top: 30px; /* Espacio entre los botones y el contenido */
+   margin-right: 0px;
+   margin-left: 0px;
+    width: 65px; /* Ancho de los botones */
+    padding: 0px; /* Espaciado interno de los botones */
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: #392337; /* Color de fondo verde */
+    color: white; /* Color del texto blanco */
+    text-align: center; /* Alineación del texto al centro */
+    text-decoration: none; /* Sin subrayado en el texto */
+    display: inline-block; /* Mostrar como un elemento de bloque */
+    font-size: 16px; /* Tamaño de fuente */
+    cursor: pointer; /* Cambiar el cursor al pasar el mouse */
+}
+
+#buscar:hover {
+    background-color: #63dc69; /* Color de fondo más oscuro cuando se pasa el mouse */
+}
+
+#anular:hover {
+    background-color: rgb(188, 43, 179); /* Color de fondo más oscuro cuando se pasa el mouse */
+}

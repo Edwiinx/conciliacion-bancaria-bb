@@ -1,0 +1,192 @@
+.container {   
+    max-width: 1000px; /* Ajusta el valor al ancho deseado */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    margin-top: 100px;
+    padding: 15px; /* Agrega un poco de relleno para el espaciado */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: rgb(233, 220, 220);
+    border-radius: 20px;
+} 
+
+.container-header {
+    position: absolute; /* Posiciona el header de forma absoluta */
+    top: 140px; /* Ajusta la posición vertical del header según sea necesario */
+    left: 180px; /* Alinea el header a la izquierda */
+    width: 73.5%; /* Ocupa todo el ancho del contenedor */
+    background-color: rgb(208, 98, 176); /* Color de fondo con transparencia */
+    padding: 10px; /* Ajusta el relleno del header */
+    text-align: left; /* Centra el contenido del header */
+    border-radius: 10px;
+}
+
+
+.container-title {
+    font-size: 24px; /* Tamaño de fuente del título */
+    color: #060505; /* Color del texto del título */
+}
+.cheque-form {
+    flex: 1;
+    margin-right: 7px;
+    background-color: #ffffff; /* Cambio de color de fondo */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 20px; /* Bordes redondeados */
+    justify-content: space-between;
+    flex-direction: column; /* Alinea los elementos en columna */
+    align-items: center; /* Alinea los elementos a la izquierda */
+}
+
+.detalle-form {
+    flex: 1;
+    background-color: #fff8f8; /* Cambio de color de fondo */
+    padding: 8px; /* Espaciado interno */
+    border-radius: 20px; /* Bordes redondeados */
+    display:flex; /* Utiliza flexbox para alinear los elementos en línea */
+    justify-content: space-between; /* Distribuye los elementos a lo largo del contenedor */
+    text-align: center; /* Centra el contenido del formulario */
+}
+input[type="text"] {
+    flex: 2; /* Permite que los elementos ocupen más espacio que las etiquetas */
+    padding: 8px; /* Ajusta el relleno de los inputs */
+    border-radius: 5px; /* Bordes redondeados */
+    border: 1px solid #ccc; /* Borde de los inputs */
+    width:150px;
+}
+
+
+input[type="text"],
+input[type="date"] {
+ margin-top: 3px;
+ padding: 5px; /* Ajusta el relleno de los inputs */
+ border-radius: 10px; /* Bordes redondeados */
+ border: 1px solid #ccc3c3; /* Borde de los inputs */
+}
+.form-title {
+    font-size: 20px; /* Tamaño de fuente más grande para el título */
+    background-color: #de69e6; /* Color de fondo de la paleta */
+    padding: 10px; /* Ajuste de relleno para resaltar el título */
+    border-radius: 10px; /* Bordes redondeados */
+    margin-bottom: 21px; /* Espacio entre el título y el contenido */
+    text-align: center; /* Centra el título */
+}
+
+.form-title2 {
+    font-size: 20px; /* Tamaño de fuente más grande para el título */
+    background-color: #de69e6; /* Color de fondo de la paleta */
+    padding: 10px; /* Ajuste de relleno para resaltar el título */
+    border-radius: 10px; /* Bordes redondeados */
+    margin-top: 3px;
+    margin-bottom: 16px; /* Espacio entre el título y el contenido */
+    text-align:center; /* Centra el título */
+    width: 500px;
+}
+
+.form-group2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los elementos horizontalmente */
+    margin-top:0;
+}
+.form-group1detalle {/* creo que estos 3 son para modificar el tamaño de los campos jeje*/
+    display: flex;
+    margin-top: 10px;
+}
+.form-group1paguese {
+    display: flex;
+    margin-top: 10px;
+}
+.form-group1suma {
+    display: flex;
+    margin-top: 10px;
+}
+/*esta linea de abajo es para cambiar la fuente de los label*/
+.paguese,.suma,.detalle,.numero_cheque,.fecha{
+    font-size:13px;
+}
+.objeto,.monto{
+    font-size: 13px;
+}
+
+
+
+#monto {
+    margin-left: 10px; /* Mueve el campo a la derecha */
+    padding: 5px; /* Ajusta el relleno del campo */
+    border-radius: 5px; /* Bordes redondeados */
+    border: 1px solid #ba4e4e; /* Borde del campo */
+    width: 100px; /* Ancho del campo */
+}
+
+
+#paguese{
+    margin-left: 10px; /* Mueve el campo a la derecha */
+    padding: 5px; /* Ajusta el relleno del campo */
+    border-radius: 5px; /* Bordes redondeados */
+    border: 1px solid; /* Borde del campo */
+    width: 200Spx; /* Ancho del campo */
+}
+
+
+
+
+#input-monto{
+    margin-left: 10px; /* Mueve el campo a la derecha */
+    padding: 5px; /* Ajusta el relleno del campo */
+    border-radius: 5px; /* Bordes redondeados */
+    border: 1px solid #9E0F74 ; /* Borde del campo */
+    width: 70px; /* Ancho del campo */
+
+}
+#input-monto-letras{
+    margin-left: 10px; /* Mueve el campo a la derecha */
+    padding: 5px; /* Ajusta el relleno del campo */
+    border-radius: 5px; /* Bordes redondeados */
+    border: 1px solid #9E0F74 ; /* Borde del campo */
+    width: 277px; /* Ancho del campo */
+}
+
+#objeto{
+    margin-left: 20px; /* Mueve el campo a la derecha */
+    padding: 5px; /* Ajusta el relleno del campo */
+    border-radius: 10px; /* Bordes redondeados */
+    border: 1px solid #9E0F74; /* Borde del campo */
+    width: 180px; /* Ancho del campo */
+}
+
+/* Estilos para los botones */
+#Grabar {
+    margin-top: 40px; /* Espacio entre los botones y el contenido */
+   margin-right: 0 0px;
+   margin-left: 110px;
+    width: 200px; /* Ancho de los botones */
+    padding: 8px; /* Espaciado interno de los botones */
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: #9E0F74 ; /* Color de fondo verde */
+    color: white; /* Color del texto blanco */
+    text-align: center; /* Alineación del texto al centro */
+    text-decoration: none; /* Sin subrayado en el texto */
+    display: center; /* Mostrar como un elemento de bloque */
+    font-size: 16px; /* Tamaño de fuente */
+    cursor: pointer; /* Cambiar el cursor al pasar el mouse */
+}
+
+#Nuevo {
+    margin-top: 165px; /* Espacio entre los botones y el contenido */
+    margin-right: 0px;
+    margin-left: 0px;
+    width: 200px; /* Ancho de los botones */
+    padding: 8px; /* Espaciado interno de los botones */
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: #9E0F74 ; /* Color de fondo verde */
+    color: white; /* Color del texto blanco */
+    text-align: center; /* Alineación del texto al centro */
+    text-decoration: none; /* Sin subrayado en el texto */
+    display: inline-block; /* Mostrar como un elemento de bloque */
+    font-size: 16px; /* Tamaño de fuente */
+    cursor: pointer; /* Cambiar el cursor al pasar el mouse */
+}
+
+#Grabar:hover, #Nuevo:hover {
+    background-color: #63dc69; /* Color de fondo más oscuro cuando se pasa el mouse */
+}
